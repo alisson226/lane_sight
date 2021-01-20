@@ -1,3 +1,3 @@
-# Project: Creat a python igage recognition to lane assitant
+# Project: Create a python image recognition to lane assitant
 
-->Add a description
+Remember to Add a description to this project
