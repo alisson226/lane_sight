@@ -1,9 +1,5 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
 ---
 
 **Finding Lane Lines on the Road**
@@ -29,25 +25,17 @@ The steps that I took to achieve the goal are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
+My pipeline consists of 5 steps. First, I converted the images to grayscale, then I applied filters of blur to reduce the amount of noise present in the image, in doing so the key elements of the image more recognizable. Third applied the Canny transform to high light the most proeminent edges. Forth I chose the region of intesrest, the lane marks are ina predictable plase, so we don't need to look at the intire image and finnaly we can use apply the annotation on the images ans videos.
 
 
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
+One potential shortcoming would be what would happen when we have shadows cast on the road or lane changes. the algorithm might not work propperlay in may inpredictable cases that may occur in not ideal conditions;
 
-Another shortcoming could be ...
+Another shortcoming could be that the video annotation is very unstable and this might lead to errors in a real world scenario.
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+A possible improvement would be to use the sobel to detect edges.
