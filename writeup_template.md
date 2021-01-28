@@ -8,14 +8,20 @@
 
 **Finding Lane Lines on the Road**
 
-The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
+The goals of this project:
+* Understand the process to develop and run an algorithm to identify lane marks on the Road
+
+The steps that I took to achieve the goal are the following:
+* First step is select the files to work with
+* Apply filters to improve the recognition of the lane edges and mark the edges
+* Tweek the parameters in snapshots do make more acurate result
+* Finnaly apply the optimal result on the video and correct any abnormal artifects that may appear
+
 
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./examples/line-segments-example.jpg "Grayscale"
 
 ---
 
